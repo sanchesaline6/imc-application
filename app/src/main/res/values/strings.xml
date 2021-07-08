@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IMCApplication</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpar">Limpar</string>
+</resources>

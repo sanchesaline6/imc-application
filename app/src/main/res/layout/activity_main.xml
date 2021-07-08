@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText"
+    >
+
+    <!-- sp é uma medida de tamanho específica para texto-->
+    <TextView
+        android:id="@+id/titleTXT"
+        android:textSize="48sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMC"
+        style="@style/title_purple" />
+
+    <EditText
+        android:id="@+id/pesoEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira seu peso em Kg"
+        style="@style/input_style" />
+
+    <EditText
+        android:id="@+id/alturaEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira sua altura em Cm"
+        style="@style/input_style"
+         />
+
+    <TextView
+        android:id="@+id/resultTXT"
+        android:textSize="48sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        style="@style/title_purple"
+        android:layout_margin="30dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/calcularBtn"
+            android:text="@string/calcular"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/style_button" />
+
+        <Button
+            android:id="@+id/limparBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/limpar"
+            android:layout_marginLeft="10sp"
+            style="@style/style_button"
+        />
+    </LinearLayout>
+</LinearLayout>
